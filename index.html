@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hetva's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .about,
+        .projects,
+        .contact {
+            margin-bottom: 40px;
+        }
+
+        .about h2,
+        .projects h2,
+        .contact h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .about p,
+        .contact p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .projects .project {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project h3 {
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        .projects .project p {
+            margin-bottom: 10px;
+        }
+
+        .projects .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .projects .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hetva's Portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm Hetva, a passionate web developer with a love for creating beautiful and functional websites.
+                With a strong background in HTML, CSS, and JavaScript, I strive to deliver the best user experience in
+                every project I work on.</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Project 1: Personal Blog</h3>
+                <p>A clean and responsive personal blog built with HTML, CSS, and JavaScript. The blog features a simple
+                    layout, intuitive navigation, and a comment section.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Project 2: Portfolio Website</h3>
+                <p>This portfolio website showcases my work, skills, and experience. It's built with HTML, CSS, and
+                    JavaScript, and it's fully responsive across all devices.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+
+            <div class="project">
+                <h3>Project 3: E-commerce Store</h3>
+                <p>An e-commerce store that allows users to browse products, add items to their cart, and proceed to
+                    checkout. The store is built with HTML, CSS, JavaScript, and features a dynamic product gallery.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out through any of the following platforms:</p>
+            <ul>
+                <li>Email: <a href="mailto:hetva@example.com">hetva@example.com</a></li>
+                <li>LinkedIn: <a href="#" target="_blank">linkedin.com/in/hetva</a></li>
+                <li>GitHub: <a href="#" target="_blank">github.com/hetva</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hetva. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
